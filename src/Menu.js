@@ -12,7 +12,7 @@ const Menu = ({ menu }) => {
 						<div className="menu__content">
 							<div className="menu__header">
 								<p className="title">{title}</p>
-								<span>{price}</span>
+								<span>${price}</span>
 							</div>
 							<div className="menu__desc">
 								<p>{desc}</p>

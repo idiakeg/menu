@@ -3,8 +3,10 @@ import React from "react";
 const Category = ({ handleClick, categories }) => {
 	return (
 		<section className="category">
-			{categories.map((item) => (
-				<button onClick={() => handleClick(item)}>{item}</button>
+			{categories.map((item, index) => (
+				<button key={index} onClick={() => handleClick(item)}>
+					{item}
+				</button>
 			))}
 		</section>
 	);
